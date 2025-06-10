@@ -264,3 +264,9 @@ nav ul {
 .material-symbols-rounded {
   font-size: 30px;
 }
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 300px;
+}
