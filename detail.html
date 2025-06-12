@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="ab">
                         <span class="material-symbols-outlined">search_insights</span> About
                     </a>
                 </li>
@@ -60,11 +60,70 @@
         <h1> Product gallery</h1>
     </header>
     <main>
+        <!-- Shopping Cart Icon -->
+        <div class="cart-icon">
+            🛒 <span id="cartCount">0</span>
+        </div>
+
+        <!-- Product Cards -->
+        <div class="container mt-5">
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Bootstrap Carousel -->
+                        <div id="carouselProduct1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imgs/train1.jpg" class="card-img-top" alt="Product Image 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/train2.jpg" class="card-img-top" alt="Product Image 2">
+                                </div>
+                            </div>
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body">
+                            <h5 class="card-title">Toy Train</h5>
+                            <p class="card-text">Short description here.</p>
+                            <button class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#productModal1">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-
-
-
+        <!-- Modal -->
+        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModal1Label">Product One Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Full product description goes here. You can include images, specs, or reviews.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 

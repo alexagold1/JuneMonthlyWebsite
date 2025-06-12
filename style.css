@@ -352,7 +352,7 @@ h1 {
   max-width: 600px; /* Optional max width */
   margin: 0 auto; /* Center horizontally */
   margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 .contact-section {
   border: 2px solid #ccc;

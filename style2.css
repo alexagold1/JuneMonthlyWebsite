@@ -347,8 +347,9 @@ div.form {
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 360px;
+  width: auto;
   backdrop-filter: blur(8px);
+  max-width: 380px;
 }
 
 h2 {
@@ -361,19 +362,21 @@ h2 {
   justify-content: center;
   gap: 12px;
   margin: 10px 0 20px;
-}
-
-.stars span {
-  font-size: 2.5rem;
-  color: #ccc;
-  cursor: pointer;
-  transition: transform 0.2s, color 0.3s;
+  width: 100%;
 }
 
 .stars span.selected {
   color: #ffa726;
 }
-
+.stars span {
+  font-size: 2.5rem;
+  color: orange;
+  cursor: pointer;
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+  filter: none;
+}
 #emoji {
   font-size: 2rem;
   margin: 8px 0;
@@ -424,4 +427,20 @@ h2 {
   margin-top: 16px;
   font-weight: bold;
   color: green;
+}
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 24px;
+  z-index: 1000;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
 }

@@ -38,3 +38,12 @@ submitBtn.addEventListener("click", () => {
   thanksMsg.style.display = "block";
   submitBtn.disabled = true;
 });
+let cartCount = 0;
+const cartCountElement = document.getElementById("cartCount");
+
+document.querySelectorAll(".add-to-cart").forEach((button) => {
+  button.addEventListener("click", () => {
+    cartCount++;
+    cartCountElement.textContent = cartCount;
+  });
+});
