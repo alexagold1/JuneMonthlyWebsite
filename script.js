@@ -1,43 +1,35 @@
-const stars = document.querySelectorAll(".stars span");
-const emoji = document.getElementById("emoji");
-const ratingLabel = document.getElementById("rating-label");
-const commentBox = document.getElementById("commentBox");
-const submitBtn = document.getElementById("submitBtn");
-const thanksMsg = document.getElementById("thanksMsg");
+document.addEventListener("DOMContentLoaded", () => {
+  const stars = document.querySelectorAll(".stars span");
 
-const labels = ["Terrible", "Bad", "Okay", "Good", "Amazing"];
-const emojis = ["😡", "😕", "😐", "🙂", "😍"];
-let selectedRating = 0;
+  stars.forEach((star, index) => {
+    star.addEventListener("click", () => {
+      // Remove 'selected' class from all stars
+      stars.forEach((s) => s.classList.remove("selected"));
+      // Add 'selected' class to all stars up to clicked one
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.add("selected");
+      }
+      // Optional: do something with the selected rating
+      console.log("Rating selected:", index + 1);
 
-stars.forEach((star, index) => {
-  star.addEventListener("click", () => {
-    selectedRating = index + 1;
+      // Enable submit button, show rating label, emoji, comment box if you want
+      document.getElementById("submitBtn").disabled = false;
+      document.getElementById("rating-label").style.display = "block";
+      document.getElementById("emoji").style.display = "block";
+      document.getElementById("commentBox").style.display = "block";
 
-    // Reset star classes
-    stars.forEach((s, i) => {
-      s.classList.toggle("selected", i < selectedRating);
+      // Update the rating label text (example)
+      document.getElementById("rating-label").textContent = `You rated this ${
+        index + 1
+      } star${index + 1 > 1 ? "s" : ""}`;
+
+      // Update emoji based on rating (simple example)
+      const emojis = ["😠", "😕", "😐", "🙂", "😄"];
+      document.getElementById("emoji").textContent = emojis[index];
     });
-
-    // Show emoji and label after click
-    emoji.style.display = "block";
-    ratingLabel.style.display = "block";
-    emoji.innerText = emojis[selectedRating - 1];
-    ratingLabel.innerText = `${
-      labels[selectedRating - 1]
-    } (${selectedRating}★)`;
-
-    // Show comment box if 1–3
-    commentBox.style.display = selectedRating <= 3 ? "block" : "none";
-
-    // Enable submit
-    submitBtn.disabled = false;
   });
 });
 
-submitBtn.addEventListener("click", () => {
-  thanksMsg.style.display = "block";
-  submitBtn.disabled = true;
-});
 let cartCount = 0;
 const cartCountElement = document.getElementById("cartCount");
 
