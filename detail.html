@@ -68,62 +68,159 @@
         <!-- Product Cards -->
         <div class="container mt-5">
             <div class="row g-4">
-                <!-- Card 1 -->
+                <!-- Row 1: 3 Cards -->
                 <div class="col-md-4">
                     <div class="card">
-                        <!-- Bootstrap Carousel -->
-                        <div id="carouselProduct1" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="imgs/train1.jpg" class="card-img-top" alt="Product Image 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="imgs/train2.jpg" class="card-img-top" alt="Product Image 2">
+                                <div class="carousel-item active"><img src="imgs/train1.jpg" class="card-img-top"
+                                        alt="1a"></div>
+                                <div class="carousel-item"><img src="imgs/train2.jpg" class="card-img-top" alt="1b">
                                 </div>
                             </div>
-                            <!-- Carousel Controls -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct1"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct1"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                             </button>
                         </div>
-
-                        <!-- Card Body -->
                         <div class="card-body">
-                            <h5 class="card-title">Toy Train</h5>
-                            <p class="card-text">Short description here.</p>
+                            <h5 class="card-title">Train Set</h5>
+                            <p class="card-text">Choo choo! Comes with tracks.</p>
                             <button class="btn btn-secondary" data-bs-toggle="modal"
                                 data-bs-target="#productModal1">Learn More</button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-
-        <!-- Modal -->
-        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="productModal1Label">Product One Details</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Full product description goes here. You can include images, specs, or reviews.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img src="imgs/plane1.jpg" class="card-img-top"
+                                        alt="2a"></div>
+                                <div class="carousel-item"><img src="imgs/plane2.jpg" class="card-img-top" alt="2b">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> Toy Plane</h5>
+                            <p class="card-text">Moves, talks, and lights up!</p>
+                            <button class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#productModal2">Learn More</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img src="imgs/block1.jpg" class="card-img-top"
+                                        alt="3a"></div>
+                                <div class="carousel-item"><img src="imgs/block2.jpg" class="card-img-top" alt="3b">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Building Blocks</h5>
+                            <p class="card-text">Create towers, castles, and more!</p>
+                            <button class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#productModal3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: 2 Cards -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img src="imgs/boat1.jpg" class="card-img-top"
+                                        alt="4a"></div>
+                                <div class="carousel-item"><img src="imgs/boat2.jpg" class="card-img-top" alt="4b">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Doll</h5>
+                            <p class="card-text">Soft, stylish, and timeless.</p>
+                            <button class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#productModal4">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active"><img src="imgs/car1.jpg" class="card-img-top"
+                                        alt="5a"></div>
+                                <div class="carousel-item"><img src="imgs/car2.jpg" class="card-img-top" alt="5b"></div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Toy Car</h5>
+                            <p class="card-text">Speed across the floor in style!</p>
+                            <button class="btn btn-secondary" data-bs-toggle="modal" d <!-- Modal -->
+                                <div class="modal fade" id="productModal1" tabindex="-1"
+                                    aria-labelledby="productModal1Label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="productModal1Label">Product One Details</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Full product description goes here. You can include images, specs, or
+                                                reviews.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary add-to-cart">Add to
+                                                    Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
 
 
@@ -132,27 +229,27 @@
 
 
 
-        <div class="rating-container">
-            <h2>Rate Your Experience</h2>
+                                <div class="rating-container">
+                                    <h2>Rate Your Experience</h2>
 
-            <div class="stars" id="stars">
-                <span data-value="1">★</span>
-                <span data-value="2">★</span>
-                <span data-value="3">★</span>
-                <span data-value="4">★</span>
-                <span data-value="5">★</span>
-            </div>
+                                    <div class="stars" id="stars">
+                                        <span data-value="1">★</span>
+                                        <span data-value="2">★</span>
+                                        <span data-value="3">★</span>
+                                        <span data-value="4">★</span>
+                                        <span data-value="5">★</span>
+                                    </div>
 
-            <div id="emoji">😐</div>
-            <div id="rating-label">Okay (3★)</div>
+                                    <div id="emoji">😐</div>
+                                    <div id="rating-label">Okay (3★)</div>
 
-            <div id="commentBox">
-                <textarea placeholder="Tell us what went wrong..."></textarea>
-            </div>
+                                    <div id="commentBox">
+                                        <textarea placeholder="Tell us what went wrong..."></textarea>
+                                    </div>
 
-            <button id="submitBtn" disabled>Submit</button>
-            <p id="thanksMsg">🎉 Thank you for your feedback!</p>
-        </div>
+                                    <button id="submitBtn" disabled>Submit</button>
+                                    <p id="thanksMsg">🎉 Thank you for your feedback!</p>
+                                </div>
 
     </main>
     <!-- Bootstrap JavaScript Libraries -->
