@@ -471,6 +471,7 @@ h2 {
 
 .card {
   height: 100%;
+  background-color: #e79552;
 }
 
 .card-body {
@@ -478,6 +479,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  color: white;
 }
 
 .card .carousel {
