@@ -75,7 +75,7 @@
 
         <!-- Product Cards -->
         <div class="container mt-5">
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <!-- Row 1: 3 Cards -->
                 <div class="col-md-4">
                     <div class="card">
@@ -130,14 +130,15 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="card">
                         <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="imgs/block1.jpg" class="card-img-top"
-                                        alt="3a"></div>
-                                <div class="carousel-item"><img src="imgs/block2.jpg" class="card-img-top" alt="3b">
+                                <div class="carousel-item active">
+                                    <img src="imgs/block1.jpg" class="card-img-top" alt="3a">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/block2.jpg" class="card-img-top" alt="3b">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
@@ -152,20 +153,45 @@
                         <div class="card-body">
                             <h5 class="card-title">Building Blocks</h5>
                             <p class="card-text">Create towers, castles, and more!</p>
-                            <button class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#productModal3">Learn More</button>
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                Learn More
+                            </button>
+                            <div class="modal fade" id="productModal3" tabindex="-1"
+                                aria-labelledby="productModal3Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productModal3Label">Building Blocks Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Full product description goes here. You can include images, specs, or
+                                            reviews.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary add-to-cart">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Row 2: 2 Cards -->
-                <div class="col-md-6">
+
+                <div class="col-md-4">
                     <div class="card">
                         <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="imgs/boat1.jpg" class="card-img-top"
-                                        alt="4a"></div>
-                                <div class="carousel-item"><img src="imgs/boat2.jpg" class="card-img-top" alt="4b">
+                                <div class="carousel-item active">
+                                    <img src="imgs/boat1.jpg" class="card-img-top" alt="4a">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imgs/boat2.jpg" class="card-img-top" alt="4b">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
@@ -178,15 +204,38 @@
                             </button>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Classic Doll</h5>
+                            <h5 class="card-title">Classic Boat</h5>
                             <p class="card-text">Soft, stylish, and timeless.</p>
-                            <button class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#productModal4">Learn More</button>
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                learn more
+                            </button>
+                            <div class="modal fade" id="productModal2" tabindex="-1"
+                                aria-labelledby="productModal2Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productModal2Label">Classic Boat Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Full product description goes here. You can include images, specs, or
+                                            reviews.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary add-to-cart">Add to
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card">
                         <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -206,29 +255,36 @@
                         <div class="card-body">
                             <h5 class="card-title">Toy Car</h5>
                             <p class="card-text">Speed across the floor in style!</p>
-                            <button class="btn btn-secondary" data-bs-toggle="modal" d <!-- Modal -->
-                                <div class="modal fade" id="productModal1" tabindex="-1"
-                                    aria-labelledby="productModal1Label" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="productModal1Label">Product One Details</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Full product description goes here. You can include images, specs, or
-                                                reviews.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary add-to-cart">Add to
-                                                    Cart</button>
-                                            </div>
+                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                learn more </button>
+                            <div class="modal fade" id="productModal1" tabindex="-1"
+                                aria-labelledby="productModal1Label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="productModal1Label">Product One Details
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Full product description goes here. You can include images, specs,
+                                            or
+                                            reviews.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary add-to-cart">Add to
+                                                Cart</button>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -237,27 +293,27 @@
 
 
 
-                                <div class="rating-container">
-                                    <h2>Rate Your Experience</h2>
+            <div class="rating-container">
+                <h2>Rate Your Experience</h2>
 
-                                    <div class="stars" id="stars">
-                                        <span data-value="1">★</span>
-                                        <span data-value="2">★</span>
-                                        <span data-value="3">★</span>
-                                        <span data-value="4">★</span>
-                                        <span data-value="5">★</span>
-                                    </div>
+                <div class="stars" id="stars">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
 
-                                    <div id="emoji">😐</div>
-                                    <div id="rating-label">Okay (3★)</div>
+                <div id="emoji">😐</div>
+                <div id="rating-label">Okay (3★)</div>
 
-                                    <div id="commentBox">
-                                        <textarea placeholder="Tell us what went wrong..."></textarea>
-                                    </div>
+                <div id="commentBox">
+                    <textarea placeholder="Tell us what went wrong..."></textarea>
+                </div>
 
-                                    <button id="submitBtn" disabled>Submit</button>
-                                    <p id="thanksMsg">🎉 Thank you for your feedback!</p>
-                                </div>
+                <button id="submitBtn" disabled>Submit</button>
+                <p id="thanksMsg">🎉 Thank you for your feedback!</p>
+            </div>
 
     </main>
     <!-- Bootstrap JavaScript Libraries -->
