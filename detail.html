@@ -46,12 +46,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ab">
+                    <a class="nav-link" href="about.html">
                         <span class="material-symbols-outlined">search_insights</span> About
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="contact.html">
                         <span class="material-symbols-outlined">manage_accounts</span> Contact </a>
                 </li>
 
@@ -60,9 +60,17 @@
         <h1> Product gallery</h1>
     </header>
     <main>
-        <!-- Shopping Cart Icon -->
-        <div class="cart-icon">
-            🛒 <span id="cartCount">0</span>
+        <div class="cart-container">
+            <div class="cart-icon" id="cartToggle">
+                🛒 <span id="cartCount">0</span>
+            </div>
+
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown d-none" id="cartDropdown">
+                <h6>🧸 Your Cart</h6>
+                <ul id="cartItems" class="list-unstyled mb-2"></ul>
+                <button class="btn btn-sm btn-outline-danger" id="clearCart">Clear Cart</button>
+            </div>
         </div>
 
         <!-- Product Cards -->

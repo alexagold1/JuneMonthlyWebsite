@@ -428,13 +428,34 @@ h2 {
   font-weight: bold;
   color: green;
 }
-.cart-icon {
+.cart-container {
   position: fixed;
   top: 20px;
   right: 30px;
-  font-size: 24px;
   z-index: 1000;
 }
+
+.cart-icon {
+  font-size: 30px;
+  cursor: pointer;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 250px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
 .card-img-top {
   height: 200px;
   object-fit: cover;
@@ -443,4 +464,25 @@ h2 {
 .carousel-control-prev,
 .carousel-control-next {
   width: 15%;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card .carousel {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card .carousel img {
+  height: 200px;
+  object-fit: cover;
 }
