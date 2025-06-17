@@ -156,29 +156,7 @@
                             <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal3">
                                 Learn More
                             </button>
-                            <div class="modal fade" id="productModal3" tabindex="-1"
-                                aria-labelledby="productModal3Label" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="productModal3Label">Building Blocks Details</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Full product description goes here. You can include images, specs, or
-                                            reviews.
-                                            <button type="button" class="btn btn-primary add-to-cart">Add to
-                                                Cart</button>
-                                        </div>
 
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -210,28 +188,7 @@
                             <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal2">
                                 learn more
                             </button>
-                            <div class="modal fade" id="productModal2" tabindex="-1"
-                                aria-labelledby="productModal2Label" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="productModal2Label">Classic Boat Details</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Full product description goes here. You can include images, specs, or
-                                            reviews.
-                                        </div>
-                                        <button type="button" class="btn btn-primary add-to-cart">Add to
-                                            Cart</button>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -258,44 +215,14 @@
                             <p class="card-text">Speed across the floor in style!</p>
                             <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal1">
                                 learn more </button>
-                            <div class="modal fade" id="productModal1" tabindex="-1"
-                                aria-labelledby="productModal1Label" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="productModal1Label">Product One Details
-                                            </h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Full product description goes here. You can include images, specs,
-                                            or
-                                            reviews.
-                                            <button type="button" class="btn btn-primary add-to-cart">Add to
-                                                Cart</button>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-
-
-            <hr>
-
-
-
-            <div class="rating-container">
+            <div class="rating-container" id="ratingPopup">
+                <button id="closePopup">✖</button>
                 <h2>Rate Your Experience</h2>
 
                 <div class="stars" id="stars">
@@ -313,7 +240,7 @@
                     <textarea placeholder="Tell us what went wrong..."></textarea>
                 </div>
 
-                <button id="submitBtn" disabled>Submit</button>
+                <button id="submitBtn">Submit</button>
                 <p id="thanksMsg">🎉 Thank you for your feedback!</p>
             </div>
 
@@ -342,9 +269,69 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
 
 
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModal1Label">Product One Details
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Full product description goes here. You can include images, specs,
+                    or
+                    reviews.
+                </div>
+                <button type="button" class="btn btn-primary add-to-cart">Add to
+                    Cart</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModal2Label">Classic Boat Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Full product description goes here. You can include images, specs, or
+                    reviews.
+                </div>
+                <button type="button" class="btn btn-primary add-to-cart">Add to
+                    Cart</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModal3Label">Building Blocks Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Full product description goes here. You can include images, specs, or
+                    reviews.
+                </div>
+                <button type="button" class="btn btn-primary add-to-cart">Add to
+                    Cart</button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
