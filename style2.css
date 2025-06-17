@@ -353,6 +353,8 @@ div.form {
   width: auto;
   backdrop-filter: blur(8px);
   max-width: 380px;
+  margin-left: 450px;
+  margin-bottom: 100px;
 }
 
 h2 {
@@ -368,18 +370,20 @@ h2 {
   width: 100%;
 }
 
-.stars span.selected {
-  color: #ffa726;
-}
 .stars span {
   font-size: 2.5rem;
-  color: orange;
+  color: #ccc; /* gray for unselected stars */
   cursor: pointer;
-  display: inline-block;
+  transition: color 0.2s;
   opacity: 1;
   visibility: visible;
   filter: none;
 }
+
+.stars span.selected {
+  color: #ffa726; /* orange for selected stars */
+}
+
 #emoji {
   font-size: 2rem;
   margin: 8px 0;
@@ -470,10 +474,20 @@ h2 {
 }
 
 .card {
-  height: 100%;
-  background-color: #e79552;
+  height: 70%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(233, 191, 157),
+    rgb(241, 148, 71)
+  );
 }
 
+.card img {
+  transition: transform 0.3s ease;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
 .card-body {
   display: flex;
   flex-direction: column;
@@ -481,7 +495,11 @@ h2 {
   height: 100%;
   color: white;
 }
-
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
 .card .carousel {
   height: 500px;
   overflow: hidden;
@@ -494,4 +512,9 @@ h2 {
 
 .card .carousel-inner {
   height: 100%;
+}
+hr {
+  height: 2px;
+  background-color: #000;
+  border: none;
 }

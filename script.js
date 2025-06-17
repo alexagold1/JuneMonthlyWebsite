@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   stars.forEach((star, index) => {
     star.addEventListener("click", () => {
-      // Remove 'selected' class from all stars
       stars.forEach((s) => s.classList.remove("selected"));
-      // Add 'selected' class to all stars up to clicked one
       for (let i = 0; i <= index; i++) {
         stars[i].classList.add("selected");
       }
