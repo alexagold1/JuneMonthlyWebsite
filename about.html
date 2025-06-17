@@ -21,69 +21,74 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Adobe Fonts (Typekit) -->
-    <link rel="stylesheet" href="https://use.typekit.net/hhz4xxp.css">
-    <link rel="stylesheet" href="https://use.typekit.net/fmp1tvq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hhz4xxp.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fmp1tvq.css" />
 
     <!-- Google Fonts: Material Symbols -->
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Material+Symbols+Rounded&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <!-- Line Icons -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
 </head>
 
 <body class="about">
     <header>
-        <!-- place navbar here -->
-        <nav>
-            <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        <span class="material-symbols-rounded">home</span> Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="detail.html">
-                        <span class="material-symbols-outlined">groups</span> Detail
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">
-                        <span class="material-symbols-outlined">search_insights</span> About
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">
-                        <span class="material-symbols-outlined">manage_accounts</span> Contact </a>
-                </li>
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgs/logo.png" alt="Little Bird Toys Logo" height="40" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <span class="material-symbols-rounded">home</span> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="detail.html">
+                                <span class="material-symbols-outlined">groups</span> Detail
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                <span class="material-symbols-outlined">search_insights</span> About
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <span class="material-symbols-outlined">manage_accounts</span> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-        <div class="logo">
-            <img src="imgs/logo.png">
-        </div>
-
-
     </header>
-    <main>
 
-
-
+    <main class="container my-5">
         <div class="timeline">
+
             <div class="timeline__event animated fadeInUp delay-3s timeline__event--type1">
                 <div class="timeline__event__icon">
                     <i class="lni-cake"></i>
-                    <div class="timeline__event__date">20-08-2019</div>
+
                 </div>
                 <div class="timeline__event__content">
                     <div class="timeline__event__title">Our Story</div>
                     <div class="timeline__event__description">
-                        <p> Little Bird Toys, established in 2018, brings families handcrafted wooden toys designed to
+                        <p>Little Bird Toys, established in 2018, brings families handcrafted wooden toys designed to
                             spark imagination and slow down playtime. Our heirloom-quality collection is built from
                             sustainable materials and made to last a lifetime, fostering connections between
-                            generations.
-                        </p>
+                            generations.</p>
                     </div>
                 </div>
             </div>
@@ -91,8 +96,7 @@
             <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
                 <div class="timeline__event__icon">
                     <i class="lni-burger"></i>
-                    <div class="timeline__event__date">Address: 43 Main St, Toms River, NJ 08753
-                    </div>
+
                 </div>
                 <div class="timeline__event__content">
                     <div class="timeline__event__title">Quality</div>
@@ -100,8 +104,7 @@
                         <p>We believe in the power of simple, safe play. Our handcrafted toys are free from plastic and
                             batteries, and made with sustainable Baltic birch wood. Each piece is meticulously crafted
                             and rigorously tested in our Toms River, NJ workshop to meet the highest safety standards
-                            (ASTM & CA-Prop 65) and ensure unmatched durability.
-                        </p>
+                            (ASTM & CA-Prop 65) and ensure unmatched durability.</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +112,7 @@
             <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
                 <div class="timeline__event__icon">
                     <i class="lni-slim"></i>
-                    <div class="timeline__event__date">Phone: (732) 555-1234</div>
+
                 </div>
                 <div class="timeline__event__content">
                     <div class="timeline__event__title">Sustainability</div>
@@ -124,10 +127,7 @@
             <div class="timeline__event animated fadeInUp timeline__event--type1">
                 <div class="timeline__event__icon">
                     <i class="lni-cake"></i>
-                    <div class="timeline__event__date"> Hours:
-                        Weekdays: 7:00 AM to 4:30 PM. Saturday: 10:00 AM to 2:00 PM
 
-                    </div>
                 </div>
                 <div class="timeline__event__content">
                     <div class="timeline__event__title">Visit Us</div>
@@ -138,44 +138,45 @@
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </main>
-    <!-- Bootstrap JavaScript Libraries -->
-    <footer>
-        <div class="footerContainer">
-            <div class="socialIcons">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-google-plus"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
+
+    <footer class="bg-light pt-4 mt-5">
+        <div class="container footerContainer text-center">
+            <div class="socialIcons mb-3">
+                <a href="#" class="me-3 text-dark"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href="#" class="me-3 text-dark"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="#" class="me-3 text-dark"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="#" class="me-3 text-dark"><i class="fa-brands fa-google-plus fa-2x"></i></a>
+                <a href="#" class="text-dark"><i class="fa-brands fa-youtube fa-2x"></i></a>
             </div>
             <div class="footerNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="detail.html">Detail</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html" class="text-decoration-none text-dark">Home</a>
+                    </li>
+                    <li class="list-inline-item"><a href="detail.html" class="text-decoration-none text-dark">Detail</a>
+                    </li>
+                    <li class="list-inline-item"><a href="contact.html"
+                            class="text-decoration-none text-dark">Contact</a></li>
+                    <li class="list-inline-item"><a href="about.html" class="text-decoration-none text-dark">About
+                            Us</a></li>
                 </ul>
             </div>
-
         </div>
-        <div class="footerBottom">
+        <div class="footerBottom text-center py-3 small text-muted">
+            &copy; 2025 Little Bird Toys. All rights reserved.
         </div>
     </footer>
 
-
-
-
-
+    <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

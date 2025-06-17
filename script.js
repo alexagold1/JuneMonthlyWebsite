@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const commentBox = document.getElementById("commentBox");
   const ratingLabel = document.getElementById("rating-label");
   const emoji = document.getElementById("emoji");
+  const popup = document.getElementById("ratingPopup");
 
   stars.forEach((star, index) => {
     star.addEventListener("click", () => {
@@ -35,17 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
     thanksMsg.style.display = "block";
   });
 
-  // 👇 SCROLL DETECTION TO SHOW POPUP
   window.addEventListener("scroll", () => {
-    const popup = document.getElementById("ratingPopup");
     if (window.scrollY > 600 && popup.style.display !== "block") {
       popup.style.display = "block";
     }
   });
 
-  // 👇 Close button for popup
   document.getElementById("closePopup").addEventListener("click", () => {
-    document.getElementById("ratingPopup").style.display = "none";
+    popup.style.display = "none";
   });
 });
 
