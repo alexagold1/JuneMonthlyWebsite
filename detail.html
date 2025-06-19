@@ -61,9 +61,9 @@
     </header>
     <main>
         <div class="cart-container">
-            <div class="cart-icon" id="cartToggle">
-                🛒 <span id="cartCount">0</span>
-            </div>
+           <div class="cart-icon">
+  🛒 <span id="cartCount">0</span>
+</div>
 
             <!-- Cart Dropdown -->
             <div class="cart-dropdown d-none" id="cartDropdown">
@@ -73,179 +73,226 @@
             </div>
         </div>
 
-        <!-- Product Cards -->
-        <div class="container mt-5">
-            <div class="row g-4 justify-content-center">
-                <!-- Row 1: 3 Cards -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="imgs/train1.jpg" class="card-img-top"
-                                        alt="1a"></div>
-                                <div class="carousel-item"><img src="imgs/train2.jpg" class="card-img-top" alt="1b">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Train Set</h5>
-                            <p class="card-text">Choo choo! Comes with tracks.</p>
-                            <button class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#productModal1">Learn More</button>
-                        </div>
-                    </div>
-                </div>
+<!-- Product Cards -->
+<div class="container mt-5">
+  <div class="row g-4 justify-content-center">
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="imgs/plane1.jpg" class="card-img-top"
-                                        alt="2a"></div>
-                                <div class="carousel-item"><img src="imgs/plane2.jpg" class="card-img-top" alt="2b">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"> Toy Plane</h5>
-                            <p class="card-text">Moves, talks, and lights up!</p>
-                            <button class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#productModal2">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="imgs/block1.jpg" class="card-img-top" alt="3a">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="imgs/block2.jpg" class="card-img-top" alt="3b">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Building Blocks</h5>
-                            <p class="card-text">Create towers, castles, and more!</p>
-                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal3">
-                                Learn More
-                            </button>
+    <!-- Train Set -->
+    <div class="col-md-4">
+      <div class="card">
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img src="imgs/train1.jpg" class="card-img-top" alt="1a"></div>
+            <div class="carousel-item"><img src="imgs/train2.jpg" class="card-img-top" alt="1b"></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Train Set</h5>
+          <p class="card-text">Choo choo! Comes with tracks (Ages: 3+).</p>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal1">Learn More</button>
+        </div>
+      </div>
+    </div>
 
-                        </div>
-                    </div>
-                </div>
+    <!-- Toy Plane -->
+    <div class="col-md-4">
+      <div class="card">
+        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img src="imgs/plane1.jpg" class="card-img-top" alt="2a"></div>
+            <div class="carousel-item"><img src="imgs/plane2.jpg" class="card-img-top" alt="2b"></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Toy Plane</h5>
+          <p class="card-text">Moves, talks, and lights up!  (Ages: Toddlers)</p>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal2">Learn More</button>
+        </div>
+      </div>
+    </div>
 
+    <!-- Building Blocks -->
+    <div class="col-md-4">
+      <div class="card">
+        <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img src="imgs/block1.jpg" class="card-img-top" alt="3a"></div>
+            <div class="carousel-item"><img src="imgs/block2.jpg" class="card-img-top" alt="3b"></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Building Blocks</h5>
+          <p class="card-text">Create towers, castles, and more! (Ages: 3+)</p>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal3">Learn More</button>
+        </div>
+      </div>
+    </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="imgs/boat1.jpg" class="card-img-top" alt="4a">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="imgs/boat2.jpg" class="card-img-top" alt="4b">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Classic Boat</h5>
-                            <p class="card-text">Soft, stylish, and timeless.</p>
-                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal2">
-                                learn more
-                            </button>
+    <!-- Classic Boat -->
+    <div class="col-md-4">
+      <div class="card">
+        <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img src="imgs/boat1.jpg" class="card-img-top" alt="4a"></div>
+            <div class="carousel-item"><img src="imgs/boat2.jpg" class="card-img-top" alt="4b"></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Classic Boat</h5>
+          <p class="card-text">Soft, stylish, and timeless. (Ages: All ages)</p>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModalBoat">Learn More</button>
+        </div>
+      </div>
+    </div>
 
-                        </div>
-                    </div>
-                </div>
+    <!-- Toy Car -->
+    <div class="col-md-4">
+      <div class="card">
+        <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img src="imgs/car1.jpg" class="card-img-top" alt="5a"></div>
+            <div class="carousel-item"><img src="imgs/car2.jpg" class="card-img-top" alt="5b"></div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Toy Car</h5>
+          <p class="card-text">Speed across the floor in style! (All ages)</p>
+          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModalCar">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <div id="carousel5" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active"><img src="imgs/car1.jpg" class="card-img-top"
-                                        alt="5a"></div>
-                                <div class="carousel-item"><img src="imgs/car2.jpg" class="card-img-top" alt="5b"></div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Toy Car</h5>
-                            <p class="card-text">Speed across the floor in style!</p>
-                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal1">
-                                learn more </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Modals -->
+<!-- Train -->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModal1Label">Classic Train Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Embark on a charming journey with this beautiful handcrafted wooden train set. Engine and three interchangeable cars boast intricate details made from real beech wood. Large size (84cm L x 11cm H x 13cm W) with moving wheels and a fully ecological design.
 
-            <div class="rating-container" id="ratingPopup">
-                <button id="closePopup">✖</button>
-                <h2>Rate Your Experience</h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="stars" id="stars">
-                    <span data-value="1">★</span>
-                    <span data-value="2">★</span>
-                    <span data-value="3">★</span>
-                    <span data-value="4">★</span>
-                    <span data-value="5">★</span>
-                </div>
+<!-- Plane -->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModal2Label">Classic Plane Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. Measures 3.5"H x 7"L x 7"W.
 
-                <div id="emoji">😐</div>
-                <div id="rating-label">Okay (3★)</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div id="commentBox">
-                    <textarea placeholder="Tell us what went wrong..."></textarea>
-                </div>
+<!-- Blocks -->
+<div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModal3Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModal3Label">Building Blocks Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H).
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <button id="submitBtn" disabled>Submit</button>
-                <p id="thanksMsg">🎉 Thank you for your feedback!</p>
-            </div>
+<!-- Boat -->
+<div class="modal fade" id="productModalBoat" tabindex="-1" aria-labelledby="boatModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-black">
+        <h5 class="modal-title" id="boatModalLabel">Classic Boat</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety. Includes two peg "lobster people." Size: 10.5"W x 3.5"H.
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Car -->
+<div class="modal fade" id="productModalCar" tabindex="-1" aria-labelledby="carModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-black>
+        <h5 class="modal-title" id="carModalLabel">Toy Car</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+This heirloom-quality wooden car is a timeless treasure. Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. Please note potential choking hazards for small children.
+      </div>
+      <div class="modal-footer">
+             <button type="button" class="btn btn-primary add-to-cart">Add to Cart</button>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    </main>
-    <!-- Bootstrap JavaScript Libraries -->
     <footer>
         <div class="footerContainer">
             <div class="socialIcons">
@@ -260,7 +307,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="detail.html">Detail</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                 </ul>
             </div>
 
@@ -268,70 +315,6 @@
         <div class="footerBottom">
         </div>
     </footer>
-
-    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
-
-
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productModal1Label">Product One Details
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Full product description goes here. You can include images, specs,
-                    or
-                    reviews.
-                </div>
-                <button type="button" class="btn btn-primary add-to-cart">Add to
-                    Cart</button>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModal2Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productModal2Label">Classic Boat Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Full product description goes here. You can include images, specs, or
-                    reviews.
-                </div>
-                <button type="button" class="btn btn-primary add-to-cart">Add to
-                    Cart</button>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModal3Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="productModal3Label">Building Blocks Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Full product description goes here. You can include images, specs, or
-                    reviews.
-                </div>
-                <button type="button" class="btn btn-primary add-to-cart">Add to
-                    Cart</button>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
