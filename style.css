@@ -514,3 +514,39 @@ body.about {
   border-top: 1px solid #dee2e6;
   margin-top: 20px;
 }
+ .contact-info-box {
+    background-color: rgba(248, 249, 250, 0.6); /* Light gray with opacity */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    font-family: "gelica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    margin-bottom: 100px;
+}
+
+.contact-info-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: black;
+    text-align: center;
+}
+
+.contact-info-box p,
+.contact-info-box ul li {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.contact-info-box i {
+    color: #e79552;
+    margin-right: 8px;
+}
+
+.contact-info-box ul {
+    padding-left: 20px;
+    list-style: disc;
+}
